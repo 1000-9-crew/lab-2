@@ -1,8 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding: 32px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: start;
 }
 
 a {
-  color: #00B7FF;
+  color: #00b7ff;
+}
+
+button {
+  padding: 4px 8px;
+  border: 2px solid rgba(255, 255, 255, 50%);
+  filter: drop-shadow(0 4px 5px rgba(0, 0, 0, 25%));
+  background-color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: drop-shadow(0 6px 5px rgba(0, 0, 0, 50%));
+  transition: all .5s ease-in-out;
+}
+
+.fine-box {
+  padding: 8px;
+  filter: drop-shadow(0 4px 5px rgba(0, 0, 0, 25%));
+  border: 2px solid rgba(255, 255, 255, 50%);
+}
+
+.block-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 8px;
+  padding: 8px 0;
+}
+
+.person-card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 320px;
+  padding: 16px;
+  background-color: whitesmoke;
 }
