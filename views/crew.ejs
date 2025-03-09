@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title><%= title %></title>
+        <link rel="stylesheet" href="/stylesheets/style.css" />
+    </head>
+    <body>
+        <a href="/"><button>Хочу додому 🙏🏻🙏🏻</button></a>
+
+        <h1>бриґада 1000-9 🎀</h1>
+
+        <div class="block-list">
+            <% members.forEach(member => { %>
+                <div class="person-card fine-box">
+                    <h2><%= member.name %></h2>
+                    <img class="fine-box" style="width: 100%; max-width: 256px; align-self: center;" src="/images/crew/<%= member.image %>" />
+                    <hr>
+                    <a href="<%= member.github %>">гітхаб</a>
+                    <p>
+                        <% member.roles.forEach(role => { %>
+                            <%= role %> ✅<br>
+                        <% }) %>
+                    </p>
+                </div>
+            <% }) %>
+        </div>
+    </body>
+</html>
+
+

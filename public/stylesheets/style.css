@@ -15,8 +15,12 @@ body {
   align-items: start;
 }
 
+h1 {
+  font-weight: 800;
+}
+
 a {
-  color: #00b7ff;
+  color: #1396ca;
 }
 
 button {
