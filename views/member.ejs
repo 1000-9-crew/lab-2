@@ -5,20 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%= title %></title>
     <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="icon" type="image/x-icon" href="/images/kit.jpg" />
 </head>
 <body>
-    <a href="/crew"><button>Назад до списку</button></a>
-
-    <h1><%= member.name %></h1>
+    <a href="/crew"><button>Назад до списку 🎀</button></a><br>
+    <div class="container">
+    <h1><%= member.name %></h1> <br>
     <img src="/images/crew/<%= member.image %>" style="width: 100%; max-width: 256px;">
     <hr>
-    <p><a href="<%= member.github %>">Гітхаб</a></p><br>
+    <p><a href="<%= member.github %>">гітхаб</a></p> <br>
 
     <h3>Ролі:</h3>
-    <p>
+    <p class="roles-list">
         <% member.roles.forEach(role => { %>
             <%= role %> ✅<br>
         <% }) %>
     </p>
+    </div>
 </body>
 </html>

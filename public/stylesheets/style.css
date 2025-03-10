@@ -18,10 +18,12 @@ body {
 
 h1 {
   font-weight: 800;
+  text-align: center;
+  align-self: center;
 }
 
 a {
-  color: #1396ca;
+  color: #a20404;
 }
 
 button {
@@ -30,6 +32,11 @@ button {
   filter: drop-shadow(0 4px 5px rgba(0, 0, 0, 25%));
   background-color: white;
   cursor: pointer;
+}
+.big-button {
+  font-size: 24px;
+  padding: 12px 24px;
+  border-radius: 8px;
 }
 
 button:hover {
@@ -59,3 +66,41 @@ button:hover {
   padding: 16px;
   background-color: whitesmoke;
 }
+iframe {
+  width: 50%;
+  max-width: 450px;
+  height: 300px;
+  display: block;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.inline-container {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.container {
+  max-width: auto;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.roles-list {
+  text-align: left;
+  width: 100%;
+}
+
+
